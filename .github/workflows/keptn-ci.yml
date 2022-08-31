@@ -67,7 +67,7 @@ jobs:
                   "deploymentstrategy": "user_managed"
                 },
                 "message": "",
-                "project": "ms1",
+                "project": "ms2",
                 "result": "",
                 "service": "$REPO",
                 "stage": "dev",
