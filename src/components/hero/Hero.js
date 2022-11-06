@@ -7,7 +7,7 @@ const Hero = () => {
     return (
         <div className='hero'>
             <div className='content'>
-                <h1>Find the Dream place</h1>
+                <h1>Find the Dream place :v2.0</h1>
                 <p className='search-text'> Search the largest selection of luxury high-rise apartments, multi-family homes, and luxury homes. </p>
                 <form className='search'>
 
