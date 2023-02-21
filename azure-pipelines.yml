@@ -9,6 +9,8 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
+trigger:
+- master
 steps:
 - task: Docker@0
   displayName: 'Build an image'
@@ -17,7 +19,6 @@ steps:
     dockerRegistryConnection: sumitdockerconnection
     imageName: 'sumit2120/test123:$(Build.BuildId)'
 
-steps:
 - task: Docker@0
   displayName: 'Push an image'
   inputs:
@@ -26,14 +27,12 @@ steps:
     action: 'Push an image'
     imageName: 'sumit2120/test123:$(Build.BuildId)'
 
-steps:
 - task: CopyFiles@2
   displayName: 'Copy Files to: $(Build.ArtifactStagingDirectory)'
   inputs:
     SourceFolder: kubernetes
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
 
-steps:
 - task: PublishPipelineArtifact@1
   displayName: 'Publish Pipeline Artifact'
   inputs:
