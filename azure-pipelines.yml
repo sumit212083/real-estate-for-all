@@ -9,8 +9,6 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
-trigger:
-- master
 steps:
 - task: Docker@0
   displayName: 'Build an image'
