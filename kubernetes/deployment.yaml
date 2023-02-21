@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: real-estate-for-all
-          image: 1645370/real-estate-for-all:$(Build.BuildId)
+          image: sumit2120/real-estate-for-all:$(Build.BuildId)
           ports:
             - containerPort: 3000
